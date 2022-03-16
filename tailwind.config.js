@@ -1,20 +1,24 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 const round = (num) =>
   num
     .toFixed(7)
-    .replace(/(\.[0-9]+?)0+$/, "$1")
-    .replace(/\.0$/, "");
+    .replace(/(\.[0-9]+?)0+$/, '$1')
+    .replace(/\.0$/, '');
 const rem = (px) => `${round(px / 16)}rem`;
 const em = (px, base) => `${round(px / base)}em`;
 
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}",'.storybook/*.{html}'],
-  darkMode: "class", // or 'media' or 'class'
+  content: [
+    './index.html',
+    './src/**/*.{vue,js,ts,jsx,tsx}',
+    '.storybook/*.{html}',
+  ],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
-      xxs: "350px",
-      xs: "500px",
+      xxs: '350px',
+      xs: '500px',
       ...defaultTheme.screens,
     },
 
@@ -24,47 +28,47 @@ module.exports = {
           "'Inter var'",
           "'Noto Sans JP'",
           "'Noto Sans KR'",
-          "Noto Sans SC",
-          "ui-sans-serif",
-          "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-          "sans-serif",
-          "Apple Color Emoji",
-          "Segoe UI Emoji",
-          "Segoe UI Symbol",
-          "Noto Color Emoji",
+          'Noto Sans SC',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji',
         ],
       },
       colors: {
         fuschia: {
-          100: "#BE58CB",
-          90: "#BE58CB",
-          80: "#F178B6",
-          60: "#FCDDEC",
+          100: '#BE58CB',
+          90: '#BE58CB',
+          80: '#F178B6',
+          60: '#FCDDEC',
         },
         iris: {
-          100: "#5D5FEF",
-          80: "#7879F1",
-          70: "#6A99DD",
-          60: "#A5A6F6",
+          100: '#5D5FEF',
+          80: '#7879F1',
+          70: '#6A99DD',
+          60: '#A5A6F6',
         },
-        deepFuscia: "#BE58CB",
-        pinkRed: "#F10E5A",
-        cornflowerBlue: "#6A99DD",
-        primary: { DEFAULT: "#272727", dark: "#F8F8F8" },
-        secondary: { DEFAULT: "#444444", dark: "#DADADA" },
-        subtle: { DEFAULT: "#777777", dark: "#BBBBBB" },
+        deepFuscia: '#BE58CB',
+        pinkRed: '#F10E5A',
+        cornflowerBlue: '#6A99DD',
+        primary: { DEFAULT: '#272727', dark: '#F8F8F8' },
+        secondary: { DEFAULT: '#444444', dark: '#DADADA' },
+        subtle: { DEFAULT: '#777777', dark: '#BBBBBB' },
       },
       letterSpacing: {
-        tightest: "-.1em",
+        tightest: '-.1em',
       },
       dropShadow: {
-        footer: "0 10px 10px rgba(0, 0, 0, 0.25)",
+        footer: '0 10px 10px rgba(0, 0, 0, 0.25)',
       },
       scale: {
         60: 0.6,
@@ -78,22 +82,22 @@ module.exports = {
         100: 100,
       },
       fontSize: {
-        xs: ["0.75rem", { lineHeight: "1rem" }],
-        sm: ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "-0.006em" }],
-        base: ["1rem", { lineHeight: "1.5rem", letterSpacing: "-0.011em" }],
-        lg: ["1.125rem", { lineHeight: "1.75rem", letterSpacing: "-0.0143em" }],
-        xl: ["1.25rem", { lineHeight: "1.75rem", letterSpacing: "-0.017em" }],
-        "2xl": ["1.5rem", { lineHeight: "2rem", letterSpacing: "-0.019em" }],
-        "3xl": [
-          "1.875rem",
-          { lineHeight: "2.25rem", letterSpacing: "-0.021em" },
+        xs: ['0.75rem', { lineHeight: '1rem' }],
+        sm: ['0.875rem', { lineHeight: '1.25rem', letterSpacing: '-0.006em' }],
+        base: ['1rem', { lineHeight: '1.5rem', letterSpacing: '-0.011em' }],
+        lg: ['1.125rem', { lineHeight: '1.75rem', letterSpacing: '-0.0143em' }],
+        xl: ['1.25rem', { lineHeight: '1.75rem', letterSpacing: '-0.017em' }],
+        '2xl': ['1.5rem', { lineHeight: '2rem', letterSpacing: '-0.019em' }],
+        '3xl': [
+          '1.875rem',
+          { lineHeight: '2.25rem', letterSpacing: '-0.021em' },
         ],
-        "4xl": ["2.25rem", { lineHeight: "2.5rem", letterSpacing: "-0.022em" }],
-        "5xl": ["3rem", { lineHeight: "1", letterSpacing: "-0.022em" }],
-        "6xl": ["3.75rem", { lineHeight: "1", letterSpacing: "-0.022em" }],
-        "7xl": ["4.5rem", { lineHeight: "1", letterSpacing: "-0.0222em" }],
-        "8xl": ["6rem", { lineHeight: "1", letterSpacing: "-0.0223em" }],
-        "9xl": ["8rem", { lineHeight: "1", letterSpacing: "-0.0223em" }],
+        '4xl': ['2.25rem', { lineHeight: '2.5rem', letterSpacing: '-0.022em' }],
+        '5xl': ['3rem', { lineHeight: '1', letterSpacing: '-0.022em' }],
+        '6xl': ['3.75rem', { lineHeight: '1', letterSpacing: '-0.022em' }],
+        '7xl': ['4.5rem', { lineHeight: '1', letterSpacing: '-0.0222em' }],
+        '8xl': ['6rem', { lineHeight: '1', letterSpacing: '-0.0223em' }],
+        '9xl': ['8rem', { lineHeight: '1', letterSpacing: '-0.0223em' }],
       },
     },
   },

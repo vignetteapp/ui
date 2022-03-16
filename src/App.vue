@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Input from '@/components/Input.vue'
-import Button from './components/Button.vue'
+import Input from '@/components/Input.vue';
+import Button from './components/Button.vue';
 </script>
 
 <template>
@@ -22,5 +22,5 @@ import Button from './components/Button.vue'
 </template>
 
 <style>
-@import "@/global.css";
+@import '@/global.css';
 </style>

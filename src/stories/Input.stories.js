@@ -1,12 +1,12 @@
-import Input from "../components/Input.vue";
+import Input from '../components/Input.vue';
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: "Input",
+  title: 'Input',
   component: Input,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    placeholder:'string'
+    placeholder: 'string',
   },
 };
 
@@ -25,5 +25,5 @@ const Template = (args) => ({
 export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/vue/writing-stories/args
 Default.args = {
-  placeholder: 'lmao'
+  placeholder: 'lmao',
 };
